@@ -463,7 +463,7 @@ export function GoogleTranslateWidget({
           align="end"
           sideOffset={6}
           className={cn(
-            "notranslate z-60 flex w-8! min-w-0! flex-col items-stretch gap-0 p-1",
+            "notranslate z-60 flex w-fit min-w-0 flex-col items-stretch gap-0 px-2 py-1",
             classNames?.menuContent,
           )}
           translate="no"
