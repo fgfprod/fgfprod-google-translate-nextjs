@@ -1,0 +1,20 @@
+/* À importer dans l’app : import "fgfprod-google-translate/styles.css" */
+:root {
+  --google-translate-banner-height: 0px;
+}
+
+@keyframes gt-rescan-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.gt-rescan-indicator__spinner {
+  display: block;
+  width: 14px;
+  height: 14px;
+  border-radius: 9999px;
+  border: 2px solid color-mix(in oklab, currentColor 22%, transparent);
+  border-top-color: currentColor;
+  animation: gt-rescan-spin 0.65s linear infinite;
+}

@@ -1,0 +1,64 @@
+{
+  "name": "fgfprod-google-translate",
+  "version": "0.1.0",
+  "description": "Widget Google Translate (Next.js / React) : sélecteur de langue, bandeau sticky, rescan du contenu dynamique",
+  "license": "MIT",
+  "author": "fgfprod",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fgfprod/fgfprod-google-translate-nextjs.git"
+  },
+  "bugs": {
+    "url": "https://github.com/fgfprod/fgfprod-google-translate-nextjs/issues"
+  },
+  "homepage": "https://github.com/fgfprod/fgfprod-google-translate-nextjs#readme",
+  "keywords": [
+    "google-translate",
+    "nextjs",
+    "react",
+    "i18n",
+    "translation"
+  ],
+  "type": "module",
+  "sideEffects": [
+    "./dist/styles.css"
+  ],
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./styles.css": "./dist/styles.css"
+  },
+  "scripts": {
+    "build": "tsup && sh scripts/postbuild.sh",
+    "prepublishOnly": "npm run build",
+    "typecheck": "tsc --noEmit"
+  },
+  "peerDependencies": {
+    "react": "^18 || ^19",
+    "react-dom": "^18 || ^19",
+    "radix-ui": "^1.4.0"
+  },
+  "dependencies": {
+    "clsx": "^2.1.1",
+    "tailwind-merge": "^3.0.0"
+  },
+  "devDependencies": {
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "radix-ui": "^1.4.3",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "tsup": "^8.5.0",
+    "typescript": "^5.9.0"
+  }
+}
